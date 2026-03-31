@@ -18,16 +18,13 @@ document.addEventListener('DOMContentLoaded', function(){
       if(e.key === 'Escape'){ setOpen(false); btn.focus(); }
     });
 
-    // Close menu when a nav link is clicked (mobile navigation)
     nav.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=> setOpen(false)));
 
-    // Close when clicking outside
     document.addEventListener('click', (e)=>{
       if(!nav.classList.contains('open')) return;
       if(!nav.contains(e.target) && e.target !== btn) setOpen(false);
     });
 
-    // Close on global ESC
     document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') setOpen(false); });
   });
 });

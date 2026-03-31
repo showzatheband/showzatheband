@@ -1,6 +1,4 @@
-// Injects the shared header into the page. Place <div id="showza-header"></div> in your HTML.
 (function(){
-  // Detect root path for assets/links
   function getRoot() {
     var path = window.location.pathname;
     if(path.endsWith('/')) path += 'index.html';
