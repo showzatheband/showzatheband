@@ -23,7 +23,7 @@
 
     document.addEventListener('click', (e)=>{
       if(!nav.classList.contains('open')) return;
-      if(!nav.contains(e.target) && e.target !== btn) setOpen(false);
+      if(!nav.contains(e.target) && !btn.contains(e.target)) setOpen(false);
     });
 
     document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') setOpen(false); });
