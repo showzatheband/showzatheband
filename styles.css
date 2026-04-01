@@ -37,7 +37,7 @@ center{position:relative; z-index:1}
 }
 .tag{color:var(--mint-2);margin-top:0;margin-bottom:10px;font-size:18px}
 .nav{color:var(--mint);font-weight:bold;text-decoration:none;padding:6px 12px;border:2px solid var(--mint);background:var(--214panel)}
-.nav:hover{background:#000000}
+.nav:hover{background:transparent}
 .navbar{display:flex;align-items:center;justify-content:center;gap:12px;margin:8px 0}
 .hamburger{
 	display: none;
